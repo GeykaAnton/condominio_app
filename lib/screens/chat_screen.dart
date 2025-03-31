@@ -8,7 +8,7 @@ class ChatScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chat'),
-        backgroundColor: const Color(0xFF0032fe),
+        backgroundColor: const Color.fromARGB(255, 143, 165, 250),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),

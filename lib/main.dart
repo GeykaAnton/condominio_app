@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'navigation/bottom_tab_navigator.dart';
+import 'package:condominio_app/navigation/bottom_tab_navigator.dart'; // Asegúrate de que la ruta sea correcta
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Condominio App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const BottomTabNavigator(),
+      home:
+          const BottomTabNavigator(), // Usa BottomTabNavigator como pantalla inicial
     );
   }
 }

@@ -8,7 +8,7 @@ class FaroScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Faro'),
-        backgroundColor: const Color(0xFF0032fe),
+        backgroundColor: const Color.fromARGB(255, 255, 60, 46),
       ),
       body: const Center(child: Text('Pantalla de Faro')),
     );

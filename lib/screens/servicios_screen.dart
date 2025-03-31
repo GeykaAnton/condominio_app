@@ -8,8 +8,11 @@ class ServiciosScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Servicios'),
-        backgroundColor: const Color(
-          0xFF0032fe,
+        backgroundColor: const Color.fromARGB(
+          255,
+          200,
+          38,
+          189,
         ), // Color consistente con el diseño
       ),
       body: ListView(

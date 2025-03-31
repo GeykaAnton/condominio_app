@@ -30,19 +30,37 @@ class _BottomTabNavigatorState extends State<BottomTabNavigator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: _widgetOptions.elementAt(_selectedIndex)),
+      body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Image.asset(
               'assets/img/inicio.png',
-              width: 24, // Tamaño más pequeño
+              width: 24,
               height: 24,
+              color: Colors.grey, // Color para ítem no seleccionado
+            ),
+            activeIcon: Image.asset(
+              'assets/img/inicio.png',
+              width: 24,
+              height: 24,
+              color: const Color(0xFF0032fe), // Color para ítem seleccionado
             ),
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/img/faro.png', width: 24, height: 24),
+            icon: Image.asset(
+              'assets/img/faro.png',
+              width: 24,
+              height: 24,
+              color: Colors.grey,
+            ),
+            activeIcon: Image.asset(
+              'assets/img/faro.png',
+              width: 24,
+              height: 24,
+              color: const Color(0xFF0032fe),
+            ),
             label: 'Faro',
           ),
           BottomNavigationBarItem(
@@ -50,11 +68,29 @@ class _BottomTabNavigatorState extends State<BottomTabNavigator> {
               'assets/img/servicios.png',
               width: 24,
               height: 24,
+              color: Colors.grey,
+            ),
+            activeIcon: Image.asset(
+              'assets/img/servicios.png',
+              width: 24,
+              height: 24,
+              color: const Color(0xFF0032fe),
             ),
             label: 'Servicios',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/img/chat.png', width: 24, height: 24),
+            icon: Image.asset(
+              'assets/img/chat.png',
+              width: 24,
+              height: 24,
+              color: Colors.grey,
+            ),
+            activeIcon: Image.asset(
+              'assets/img/chat.png',
+              width: 24,
+              height: 24,
+              color: const Color(0xFF0032fe),
+            ),
             label: 'Chat',
           ),
         ],
@@ -62,6 +98,7 @@ class _BottomTabNavigatorState extends State<BottomTabNavigator> {
         selectedItemColor: const Color(0xFF0032fe),
         unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
+        backgroundColor: Colors.white,
       ),
     );
   }
